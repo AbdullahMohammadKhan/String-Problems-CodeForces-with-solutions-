@@ -51,5 +51,53 @@ Note
 In the first sample Anton has one icosahedron, one cube, one tetrahedron and one dodecahedron. Icosahedron has 20 faces, cube has 6 faces, tetrahedron has 4 faces and dodecahedron has 12 faces. In total, they have 20 + 6 + 4 + 12 = 42 faces.
 
 ```python
-x=input().split()
+a=int(input())
+sum=0
+for i in range(a):
+    c=input()
+    if c=="Tetrahedron":
+        sum+=4
+    elif c=="Cube":
+        sum+=6
+    elif c=="Octahedron":
+        sum+=8
+    elif c=="Dodecahedron":
+        sum+=12
+    elif c=="Icosahedron":
+        sum+=20
+print(sum)
+
+```
+Here's how the masters did it:
+
+```python
+import sys
+ 
+ 
+num_inputs = int(sys.stdin.readline().strip())
+shape_inputs = [shape.strip() for shape in sys.stdin.readlines()]
+ 
+POLYHEDRONS = {
+    'Tetrahedron': 4,
+    'Cube': 6,
+    'Octahedron': 8,
+    'Dodecahedron': 12,
+    'Icosahedron': 20
+}
+ 
+total_sides = sum([POLYHEDRONS[shape] for shape in shape_inputs])
+print(total_sides)
+```
+```python
+from sys import stdin 
+mapF = {'Icosahedron': 20, 'Cube': 6,
+        'Tetrahedron': 4, 'Dodecahedron': 12, 'Octahedron':8}
+ 
+num = int(stdin.readline())
+faces = 0
+ 
+for i in range(num):
+    faces += mapF[stdin.readline().rstrip()]
+ 
+print(faces)
 ```
