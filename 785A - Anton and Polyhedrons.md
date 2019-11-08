@@ -101,3 +101,222 @@ for i in range(num):
  
 print(faces)
 ```
+```python
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar 15 08:04:38 2017
+ 
+@author: kprashan
+"""
+from sys import stdin
+polyDict = {"Icosahedron" : 20,
+             "Cube" : 6,
+             "Octahedron"  : 8,
+             "Dodecahedron" : 12,
+             "Tetrahedron" :4 }
+array = []
+for  line in stdin :
+    array.append(line.rstrip())
+n = int(array[0])
+faces =0
+for string in array[1:] :
+    faces += polyDict[string]
+ 
+print(faces)
+```
+
+
+
+```python
+import sys
+ 
+ 
+figures = dict(
+    Tetrahedron=4,
+    Cube=6,
+    Octahedron=8,
+    Dodecahedron=12,
+    Icosahedron=20,
+)
+count = 0
+for _ in range(int(sys.stdin.readline())):
+ 
+    count += figures[sys.stdin.readline().strip()]
+ 
+print(count)
+
+```
+
+
+```python
+import sys
+ 
+_ = input()
+shapes = [s.strip() for s in sys.stdin.readlines()]
+ 
+d = {
+    "Tetrahedron": 4,
+    "Cube": 6,
+    "Octahedron": 8,
+    "Dodecahedron": 12,
+    "Icosahedron": 20
+}
+ 
+print(sum([d[s] for s in shapes]))
+```
+
+
+
+```python
+import sys
+ 
+data = {
+    'Tetrahedron': 4,
+    'Cube': 6,
+    'Octahedron': 8,
+    'Dodecahedron': 12,
+    'Icosahedron': 20,
+}
+ 
+if __name__ == '__main__':
+    lines = [x.strip() for x in sys.stdin.readlines()]
+    result = 0
+ 
+    for line in lines[1:]:
+        if line in data.keys():
+            result += data[line]
+ 
+    sys.stdout.write(str(result) + '\n')
+
+
+```
+
+
+
+```python
+import sys
+ 
+shapes = [s.strip() for s in sys.stdin.readlines()][1:]
+ 
+d = {
+    "Tetrahedron": 4,
+    "Cube": 6,
+    "Octahedron": 8,
+    "Dodecahedron": 12,
+    "Icosahedron": 20
+}
+ 
+print(sum([d[s] for s in shapes]))
+```
+
+
+
+```python
+import sys
+from collections import defaultdict
+ 
+shapes = defaultdict(int)
+n = int(sys.stdin.readline())
+ 
+for shape in range(n):
+    name = sys.stdin.readline()[:-1]
+    shapes[name] += 1
+ 
+total = 0
+total += 4*shapes["Tetrahedron"]
+total += 6*shapes["Cube"]
+total += 8*shapes["Octahedron"]
+total += 12*shapes["Dodecahedron"]
+total += 20*shapes["Icosahedron"]
+ 
+print(total)
+```
+
+
+```python
+import sys
+ 
+n = int(sys.stdin.readline())
+ 
+granes = {'Tetrahedron' : 4,
+          'Cube' : 6,
+          'Octahedron' : 8,
+          'Dodecahedron' : 12,
+          'Icosahedron' : 20}
+ 
+ans = 0
+for i in range(n):
+    t = sys.stdin.readline().strip()
+    ans += granes[t]
+ 
+print(ans)
+```
+
+
+```python
+print(sum([4,0,8,20,6,12][ord(s[0])%7]for s in(input()for i in range(int(input())))))
+```
+
+
+```python
+i=input;print(sum({'T':4,'C':6,'O':8,'D':12,'I':20}[i()[0]]for _ in range(int(i()))))
+```
+
+
+```python
+i=input;print(sum({'T':4,'C':6,'O':8,'D':12,'I':20}[i()[0]]for _ in range(int(i()))))
+```
+```python
+n=int(input())
+print(sum({'T':4,'C':6,'O':8,'D':12,'I':20}[input()[0]]for _ in ' '*n))
+```
+
+```python
+d={'T':4,'C':6,'O':8,'D':12,'I':20};i=input;print(sum(d[i()[0]]for _ in range(int(i()))))
+```
+```python
+n=int(input());d={'T':4,'C':6,'O':8,'D':12,'I':20}
+print(sum([d[input()[0]] for i in range(n)]))
+```
+```python
+d = {'T': 4, 'C': 6, 'O': 8, 'D': 12, 'I': 20}
+print(sum(d[input()[0]] for _ in range(int(input()))))
+```
+```python
+d={'T':4,'C':6,'O':8,'D':12,'I':20}
+c=0
+for i in range(int(input())):
+    c+=d[input()[0]]
+ 
+print(c)
+```
+```python
+x = int(input())
+c = {'T': 4, 'C': 6, 'O': 8, 'D': 12, 'I': 20}
+print(sum([c[input()[0]] for _ in range(x)]))
+```
+
+```python
+n=int(input())
+d = {'T':4,'C':6,'O':8,'D':12,'I':20}
+sum=0
+while n:
+    sum += d[input()[:1]]
+    n-=1
+print(sum)
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
