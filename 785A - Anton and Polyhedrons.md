@@ -31,23 +31,25 @@ Each of the following n lines of the input contains a string si — the name of 
 Output
 Output one number — the total number of faces in all the polyhedrons in Anton's collection.
 
-Examples
-inputCopy
+## Examples
+
+#input
 4
 Icosahedron
 Cube
 Tetrahedron
 Dodecahedron
-outputCopy
+#output
+
 42
-inputCopy
+#input
 3
 Dodecahedron
 Octahedron
 Octahedron
-outputCopy
+#output
 28
-Note
+#Note
 In the first sample Anton has one icosahedron, one cube, one tetrahedron and one dodecahedron. Icosahedron has 20 faces, cube has 6 faces, tetrahedron has 4 faces and dodecahedron has 12 faces. In total, they have 20 + 6 + 4 + 12 = 42 faces.
 
 ```python
