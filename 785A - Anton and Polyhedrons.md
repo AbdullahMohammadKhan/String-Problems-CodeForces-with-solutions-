@@ -90,6 +90,7 @@ POLYHEDRONS = {
 total_sides = sum([POLYHEDRONS[shape] for shape in shape_inputs])
 print(total_sides)
 ```
+The strip() method returns a copy of the string in which all chars have been stripped from the beginning and the end of the string (default whitespace characters).
 ```python
 from sys import stdin 
 mapF = {'Icosahedron': 20, 'Cube': 6,
@@ -103,6 +104,8 @@ for i in range(num):
  
 print(faces)
 ```
+
+The rstrip() method returns a copy of the string with trailing characters removed (based on the string argument passed). The rstrip() removes characters from the right based on the argument (a string specifying the set of characters to be removed).
 ```python
 # -*- coding: utf-8 -*-
 """
