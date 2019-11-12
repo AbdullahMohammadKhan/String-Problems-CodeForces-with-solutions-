@@ -47,3 +47,72 @@ In the first sample, Anton won 6 games, while Danik — only 1. Hence, the answe
 In the second sample, Anton won 3 games and Danik won 4 games, so the answer is "Danik".
 
 In the third sample, both Anton and Danik won 3 games and the answer is "Friendship".
+
+
+My solution:
+
+
+```python
+input()
+s=input()
+if s.count("A")==s.count("D"):
+    print("Friendship")
+elif s.count("A")>s.count("D"):
+    print("Anton")
+else:
+    print("Danik")
+
+```
+
+
+```python
+i=input
+n=int(i())
+a=i().count('A')*2
+print([['Friendship','Danik'][a<n],'Anton'][a>n])
+```
+```python
+d=int(input())-input().count('A')*2;print([['Friendship','Danik'][d>0],'Anton'][d<0])
+```
+
+```python
+n=int(input())
+s=input()
+print('Anton' if n<s.count('A')*2 else ('Danik','Friendship')[n==s.count('A')*2])
+```
+
+```python
+n=int(input());
+s=input()
+a=s.count('A');
+d=n-a;
+print('Anton' if a>d else 'Danik' if d>a else 'Friendship')
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+
+
+
