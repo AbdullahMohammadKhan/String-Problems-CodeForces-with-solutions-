@@ -44,13 +44,34 @@ else:
 
 
 ```python
-
+s=input();print(min(len(s),s.count('a')*2-1))
 ```
 ```python
-
+'''
+Dear Programmer:
+When I Wrote This Code,Only God and i knew how it worked .
+Now,Only God Knows it!
+ 
+Therfore,if you are trying to optimize this routine and 
+it Fails (most surely),Please increase this counter as 
+a warning for the next person : 
+ 
+total_hours_wasted_here: 1
+ 
+#HajLorenzo
+ 
+'''
+ 
+_x=input()
+_count=_x.count("a")
+print(_count+_count-1 if _count<=len(_x)//2 else len(_x))
 ```
 ```python
-
+s=input()
+if s.count('a')<=len(s)//2:
+    print(2*(s.count('a'))-1)
+else:
+    print(len(s))
 ```
 ```python
 
