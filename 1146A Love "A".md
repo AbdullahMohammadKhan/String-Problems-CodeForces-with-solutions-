@@ -30,3 +30,55 @@ Note
 In the first example, it's enough to erase any four of the "x"s. The answer is 3 since that is the maximum number of characters that can remain.
 
 In the second example, we don't need to erase any characters.
+
+My solution:
+```python
+s=input()
+if s.count("a")> (len(s)-s.count("a")):
+    print(len(s))
+elif s.count("a")== (len(s)-s.count("a")):
+    print(len(s)-1)
+else:
+    print(2*s.count("a")-1)
+```
+
+
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
