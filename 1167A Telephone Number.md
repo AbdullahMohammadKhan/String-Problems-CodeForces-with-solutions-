@@ -103,7 +103,16 @@ for t in range(int(input())):
     print('YES' if '8' in s and n - s.find('8') >= 11 else 'NO')
 ```
 ```python
-
+for i in range(int(input())):
+    n=int(input())
+    s=input()
+    if '8' in s:
+        if n-s.index('8')>=11:
+            print ("YES")
+        else :
+            print("NO")
+    else :
+        print("NO")
 ```
 ```python
 
