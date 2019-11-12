@@ -39,3 +39,93 @@ YES
 NO
 Note
 In the first test case you need to delete the first and the third digits. Then the string 7818005553535 becomes 88005553535.
+
+
+```python
+for _ in [0]*int(input()):input();print('NYOE S'['8'in input()[:-10]::2])
+```
+```python
+
+for _ in [0]*int(input()):input();print('YNEOS'[input()[:-10].find('8')<0::2])
+```
+```python
+for i in range(int(input())):int(input());print(['NO','YES']['8' in input()[:-10:]])
+```
+```python
+for _ in range(int(input())):
+    input()
+    print('YES' if '8' in input()[:-10] else 'NO')
+```
+```python
+import sys
+for s in sys.stdin.read().split()[2::2]:
+    print('YES' if '8' in s[:-10] else 'NO')
+```
+```python
+for i in range(int(input())):
+    n=int(input())
+    u=input().find('8')
+    print('YNEOS'[n<u+11 or u<0::2])
+```
+```python
+for i in range(int(input())):
+    n, a = input(), input()
+    print(('NO', 'YES')[len(a[a.find('8'):]) > 10])
+```
+```python
+[[print('YES' if n >= n - input().find('8') >= 11 else 'NO') for n in [int(input())]] for _ in range(int(input()))]
+```
+```python
+n=int(input())
+for i in range(0,n):
+ 
+	m=int(input())
+	s=input()
+	if('8' in s[:-10]):
+		print("YES")
+	else:
+		print("NO")
+	
+```
+```python
+for i in range(int(input())):
+    n, p = int(input()), input().find('8')
+    print(('NO', 'YES')[p != -1 and n - p >= 11])
+```
+```python
+for _ in range(int(input())):
+    input()
+    print(('NO', 'YES')[sum(map(str.isdigit, (input() + '8').split('8', 1)[1])) > 10])
+```
+```python
+for t in range(int(input())):
+    n, s = int(input()), input()
+    print('YES' if '8' in s and n - s.find('8') >= 11 else 'NO')
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
