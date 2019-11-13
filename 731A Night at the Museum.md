@@ -49,28 +49,76 @@ In total, 1 + 5 + 10 + 2 = 18 rotations are required.
 
 
 ```python
+inp=input()
+sum=min(abs(ord(inp[0])%96-ord('a')%96),26-abs(ord(inp[0])%96-ord('a')%96))
+for i in range(len(inp)-1):
+    sum+=min(abs(ord(inp[i])%96-ord(inp[i+1])%96),26-abs(ord(inp[i])%96-ord(inp[i+1])%96))
+    #print(min(abs(ord(inp[i])%96-ord(inp[i+1])%96),26-abs(ord(inp[i])%96-ord(inp[i+1])%96)))
+    
+    
+print(sum)
 
 ```
 ```python
-
+c=97;s=0;
+for x in map(ord,input()):
+	i=abs(c-x)
+	s+=min(i,26-i)
+	c=x
+print(s)
+ 
 ```
 ```python
-
+t=0;a=97
+for i in input():
+    b=abs(ord(i)-a);t+=min(b,26-b);a=ord(i)
+print(t)
 ```
 ```python
-
+s=input()
+p=0
+m=0
+for c in s:
+    d=ord(c)-97
+    m+=min((d-p)%26,(p-d)%26,)
+    p=d
+print(m)
 ```
 ```python
-
+a, x = 97, 0
+for b in map(ord, input()):
+    x += min((a - b) % 26, (b - a) % 26)
+    a = b
+print(x)
 ```
 ```python
-
+s=input()
+p=0
+m=0
+for c in s:
+    d=ord(c)-97
+    m+=min((d-p)%26,(p-d)%26,)
+    p=d
+print(m)
 ```
 ```python
-
+c = 97; s = 0
+for i in map(ord,input()):
+    x=abs(c-i)
+    s+=min(x,26-x)
+    c = i
+print(s)
 ```
 ```python
-
+s=input()
+p='a'
+dist=0
+for c in s:
+	temp=abs(ord(c)-ord(p))
+	dist+=min(temp,26-temp)
+	p=c
+print(dist)
+ 
 ```
 ```python
 
