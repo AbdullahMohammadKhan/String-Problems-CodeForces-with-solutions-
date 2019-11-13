@@ -51,16 +51,36 @@ In test case 1, for i = 5 there exists j = 3 such that si = sj and j
 
 
 ```python
+n=int(input())
+a=[]
+for i in range(n):
+    s=input()
+    if s in a:
+        print("YES")
+    else:
+        print("NO")
+        a.append(s)
 
+```
+```python
+s=set()
+for i in range(int(input())):
+    t=input()
+    print('YES' if t in s else 'NO')
+    s.add(t)
 ```
 ```python
 
 ```
 ```python
-
-```
-```python
-
+n = int(input())
+ 
+d = {}
+ 
+for i in range(n):
+  name = input()
+  print(d.get(name, "NO"))
+  d[name] = "YES"
 ```
 ```python
 
