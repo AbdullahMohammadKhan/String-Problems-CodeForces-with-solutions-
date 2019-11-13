@@ -26,3 +26,32 @@ outputCopy
 Konjac
 
 
+```python
+s=input()
+print(s[0].upper(),end="")
+print(s[1:])
+
+```
+```python
+s=input();print(s[0].upper()+s[1:])
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+
+
